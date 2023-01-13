@@ -1,0 +1,11 @@
+sertakan ' :aplikasi '
+
+def localPropertiesFile =  File baru  (rootProject . projectDir, " local.properties " )
+properti def =  Properti baru  ()
+
+menegaskan localPropertiesFile . ada()
+FileProperti lokal . withReader( " UTF-8 " ) { pembaca  -> properti . memuat(pembaca) }
+
+def flutterSdkPath = properti . getProperty( " bergetar.sdk " )
+tegaskan flutterSdkPath !=  null , " flutter.sdk tidak disetel di properti lokal "
+terapkan dari : " $f lutterSdkPath /packages/flutter_tools/gradle/app_plugin_loader.gradle "
