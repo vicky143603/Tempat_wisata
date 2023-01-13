@@ -1,0 +1,17 @@
+<? versi xml = " 1.0 " penyandian = " utf-8 " ?>
+< sumber daya >
+    <!-- Tema diterapkan ke Jendela Android saat proses dimulai saat pengaturan Mode Gelap OS aktif -->
+    < nama gaya  = " LaunchTheme " parent = " @android:style/Theme.Black.NoTitleBar " > 
+        <!-- Menampilkan layar splash pada aktivitas. Secara otomatis dihapus ketika
+             mesin Flutter menggambar frame pertamanya -->
+        < nama item  = " android:windowBackground " >@drawable/launch_background</ item >
+    </ gaya >
+    <!-- Tema diterapkan ke Jendela Android segera setelah proses dimulai.
+         Tema ini menentukan warna Jendela Android saat Anda
+         UI Flutter diinisialisasi, serta di belakang UI Flutter Anda saat itu
+         berlari.
+         Tema ini hanya digunakan dimulai dengan V2 penyematan Android Flutter. -->
+    < nama gaya  = " NormalTheme " parent = " @android:style/Theme.Black.NoTitleBar " > 
+        < nama item  = " android:windowBackground " >?android:colorBackground</ item >
+    </ gaya >
+</ sumber daya >
