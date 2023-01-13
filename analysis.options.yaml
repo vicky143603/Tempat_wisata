@@ -1,0 +1,29 @@
+# File ini mengonfigurasi penganalisa, yang secara statis menganalisis kode Dart
+# periksa kesalahan, peringatan, dan serat.
+#
+# Masalah yang diidentifikasi oleh penganalisis muncul di UI berkemampuan Dart
+# IDE (https://dart.dev/tools#ides-and-editors). Penganalisis juga bisa
+# dipanggil dari baris perintah dengan menjalankan `flutter analyze`.
+
+# Baris berikut mengaktifkan kumpulan lint yang direkomendasikan untuk aplikasi Flutter,
+# paket, dan plugin yang dirancang untuk mendorong praktik pengkodean yang baik.
+termasuk : paket:flutter_lints/flutter.yaml
+
+serat :
+  # Aturan serat yang diterapkan pada proyek ini dapat disesuaikan di
+  # di bawah untuk menonaktifkan aturan dari `package:flutter_lints/flutter.yaml`
+  # disertakan di atas atau untuk mengaktifkan aturan tambahan. Daftar semua serat yang tersedia
+  # dan dokumentasinya diterbitkan di
+  # https://dart-lang.github.io/linter/lints/index.html.
+  #
+  # Alih-alih menonaktifkan aturan serat untuk keseluruhan proyek di
+  # di bawah, itu juga dapat ditekan untuk satu baris kode
+  # atau file dart tertentu dengan menggunakan `// abaikan: name_of_lint` dan
+  # `// abaikan_untuk_file: name_of_lint` sintaks di baris atau di file
+  # menghasilkan serat.
+  aturan :
+    # avoid_print: false # Batalkan komentar untuk menonaktifkan aturan `avoid_print`
+    # prefer_single_quotes: true # Batalkan komentar untuk mengaktifkan aturan `prefer_single_quotes`
+
+# Informasi tambahan tentang file ini dapat ditemukan di
+# https://dart.dev/guides/language/analysis-options
