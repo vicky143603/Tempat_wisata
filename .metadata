@@ -1,0 +1,45 @@
+# File ini melacak properti proyek Flutter ini.
+# Digunakan oleh alat Flutter untuk menilai kemampuan dan melakukan peningkatan, dll.
+#
+# File ini harus dikontrol versinya.
+
+Versi: kapan:
+  revisi: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+  saluran: stabil
+
+project_type: aplikasi
+
+# Melacak metadata untuk perintah migrasi bergetar
+migrasi:
+  platform:
+    - platform: akar
+      buat_revisi: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+      revisi_dasar: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+    - platform: android
+      buat_revisi: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+      revisi_dasar: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+    - platform: ios
+      buat_revisi: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+      revisi_dasar: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+    - platform: linux
+      buat_revisi: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+      revisi_dasar: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+    - platform: makro
+      buat_revisi: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+      revisi_dasar: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+    - platform: web
+      buat_revisi: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+      revisi_dasar: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+    - platform: jendela
+      buat_revisi: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+      revisi_dasar: 6928314d505d2bb4777be05e45d7808a5aa91d2a
+
+  # Bagian yang disediakan pengguna
+
+  # Daftar jalur Lokal (relatif terhadap file ini) yang seharusnya
+  # diabaikan oleh alat migrasi.
+  #
+  # File yang bukan bagian dari template akan diabaikan secara default.
+  file_tidak dikelola:
+    - 'lib/main.dart'
+    - 'ios/Runner.xcodeproj/project.pbxproj'
