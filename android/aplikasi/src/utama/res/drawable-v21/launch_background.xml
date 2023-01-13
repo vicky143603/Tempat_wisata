@@ -1,0 +1,12 @@
+<? versi xml = " 1.0 " penyandian = " utf-8 " ?>
+<!-- Ubah file ini untuk menyesuaikan layar splash peluncuran Anda -->
+< lapisan-daftar  xmlns : android = " http://schemas.android.com/apk/res/android " >
+    < item  android : drawable = " ?android:colorBackground " />
+
+    <!-- Anda dapat memasukkan aset gambar Anda sendiri di sini -->
+    <!-- <item>
+        <bitmap
+            android:gravitasi="pusat"
+            android:src="@mipmap/launch_image" />
+    </item> -->
+</ daftar-lapisan >
