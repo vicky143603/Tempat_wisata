@@ -1,0 +1,34 @@
+< manifes  xmlns : android = " http://schemas.android.com/apk/res/android "
+    paket = " com.contoh.wisatae_semarang " >
+   < aplikasi
+        android : label = " wisata_pati "
+        android : nama = " ${applicationName} "
+        android : icon = " @mipmap/ic_launcher " >
+        < aktivitas
+            android : nama = " .MainActivity "
+            android : diekspor = " benar "
+            android : launchMode = " singleTop "
+            android : theme = " @style/LaunchTheme "
+            android : configChanges = " orientasi|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode "
+            android : hardwareAccelerated = " true "
+            android : windowSoftInputMode = " adjustResize " >
+            <!-- Menentukan tema Android untuk diterapkan ke Aktivitas ini secepatnya
+                 proses Android telah dimulai. Tema ini terlihat oleh pengguna
+                 sementara UI Flutter diinisialisasi. Setelah itu, tema ini berlanjut
+                 untuk menentukan latar belakang Window di belakang Flutter UI. -->
+            < meta-data
+              android : nama = " io.flutter.embedding.android.NormalTheme "
+              android : resource = " @style/NormalTheme "
+              />
+            < filter maksud >
+                < action  android : name = " android.intent.action.MAIN " />
+                < kategori  android : nama = " android.intent.category.PELUNCUR " />
+            </ maksud-filter >
+        </ aktivitas >
+        <!-- Jangan hapus meta-data di bawah ini.
+             Ini digunakan oleh alat Flutter untuk menghasilkan GeneratedPluginRegistrant.java -->
+        < meta-data
+            android : nama = " flutterEmbedding "
+            android : nilai = " 2 " />
+    </ aplikasi >
+</ manifestasi >
