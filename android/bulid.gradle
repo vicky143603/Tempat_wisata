@@ -1,0 +1,31 @@
+skrip bangunan {
+    ext . kotlin_versi =  ' 1.6.10 '
+    repositori {
+        google()
+        mavenCentral()
+    }
+
+    dependensi {
+        classpath ' com.android.tools.build:gradle:7.1.2 '
+        classpath " org.jetbrains.kotlin:kotlin-gradle-plugin: $k otlin_version "
+    }
+}
+
+semua proyek {
+    repositori {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject . buildDir =  ' ../build '
+subproyek {
+    proyek . buildDir =  " ${ rootProject.buildDir } / ${ nama proyek } "
+}
+subproyek {
+    proyek . evaluasiDependsOn( ' :app ' )
+}
+
+tugas bersih ( ketik : Hapus ) {
+    hapus rootProject . buildDir
+}
