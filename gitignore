@@ -1,0 +1,44 @@
+# Lain-lain
+* .kelas
+* .log
+* .pyc
+* .swp
+.DS_Store
+.atom /
+.buildlog /
+.sejarah
+.svn /
+migrasi_working_dir /
+
+# IntelliJ terkait
+* .iml
+* .ipr
+* .iws
+.ide /
+
+# Folder .vscode berisi konfigurasi peluncuran dan tugas yang Anda konfigurasikan
+# Kode VS yang mungkin ingin Anda sertakan dalam kontrol versi, jadi baris ini
+# dikomentari secara default.
+# .vscode/
+
+# Terkait Flutter/Dart/Pub
+** / dok / api /
+** / ios / Flutter / .last_build_id
+.alat_dart /
+.flutter-plugins
+.flutter-plugins-dependencies
+.paket
+.pub-cache /
+.pub /
+/ bangun /
+
+# Simbolisasi terkait
+aplikasi. * .simbol
+
+# Kebingungan terkait
+aplikasi. * .map.json
+
+# Android Studio akan menempatkan artefak bangunan di sini
+/ android / aplikasi / debug
+/ android / aplikasi / profil
+/ android / aplikasi / rilis
