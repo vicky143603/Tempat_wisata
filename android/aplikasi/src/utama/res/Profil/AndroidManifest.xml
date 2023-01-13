@@ -1,0 +1,8 @@
+< manifes  xmlns : android = " http://schemas.android.com/apk/res/android "
+    paket = " com.contoh.objek_wisata " >
+    <!-- Izin INTERNET diperlukan untuk pengembangan. Secara khusus,
+         alat Flutter membutuhkannya untuk berkomunikasi dengan aplikasi yang sedang berjalan
+         untuk mengizinkan pengaturan breakpoint, untuk menyediakan hot reload, dll.
+    -->
+    < menggunakan izin  android : nama = " android.permission.INTERNET " />
+</ manifestasi >
