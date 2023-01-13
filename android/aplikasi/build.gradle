@@ -1,0 +1,71 @@
+def localProperties =  Properti baru  ()
+def localPropertiesFile = rootProject . file( ' local.properties ' )
+if (localPropertiesFile .exist ( )) {
+    FileProperti lokal . withReader( ' UTF-8 ' ) { pembaca  ->
+        properti lokal . memuat (pembaca)
+    }
+}
+
+def flutterRoot = properti lokal . getProperty( ' flutter.sdk ' )
+if (flutterRoot ==  null ) {
+    throw  new  GradleException ( " Flutter SDK tidak ditemukan. Tentukan lokasi dengan flutter.sdk di file local.properties. " )
+}
+
+def flutterVersionCode = properti lokal . getProperty( ' flutter.versionCode ' )
+jika (flutterVersionCode ==  null ) {
+    flutterVersionCode =  ' 1 '
+}
+
+def flutterVersionName = properti lokal . getProperty( ' flutter.versionName ' )
+if (flutterVersionName ==  null ) {
+    flutterVersionName =  ' 1.0 '
+}
+
+terapkan plugin : ' com.android.application '
+terapkan plugin : ' kotlin-android '
+terapkan dari : " $f lutterRoot /packages/flutter_tools/gradle/flutter.gradle "
+
+android {
+    compileSdkVersion bergetar . compileSdkVersion
+    ndkVersion bergetar . ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion . VERSI_1_8
+        targetKompatibilitas JavaVersion . VERSI_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget =  ' 1.8 '
+    }
+
+    set sumber {
+        utama . jawa . srcDirs + =  ' src/main/kotlin '
+    }
+
+    defaultConfig {
+        // TODO: Tentukan ID Aplikasi unik Anda sendiri (https://developer.android.com/studio/build/application-id.html).
+        applicationId " com.contoh.wisata_pati "
+        // Anda dapat memperbarui nilai berikut agar sesuai dengan kebutuhan aplikasi Anda.
+        // Untuk informasi selengkapnya, lihat: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
+        minSdkVersion bergetar . minSdkVersion
+        bergetar targetSdkVersion . targetSdkVersion
+        versionCode flutterVersionCode . keInteger()
+        versionName bergetarVersionName
+    }
+
+    tipe bangunan {
+        melepaskan {
+            // TODO: Tambahkan konfigurasi penandatanganan Anda sendiri untuk build rilis.
+            // Menandatangani dengan kunci debug untuk saat ini, jadi `flutter run --release` berfungsi.
+            penandatangananConfig penandatangananConfigs . debug
+        }
+    }
+}
+
+bergetar {
+    sumber ' ../.. '
+}
+
+dependensi {
+    implementasi " org.jetbrains.kotlin:kotlin-stdlib-jdk7: $k otlin_version "
+}
