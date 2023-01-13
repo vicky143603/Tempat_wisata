@@ -1,0 +1,13 @@
+gradle-wrapper.jar
+/ .gradle
+/ menangkap /
+/ gradlew
+/gradlew.bat _
+/ local.properties
+GeneratedPluginRegistrant.java
+
+# Ingatlah untuk tidak pernah membagikan keystore Anda secara publik.
+# Lihat https://flutter.dev/docs/deployment/android#reference-the-keystore-from-the-app
+key.properties
+** / * .keystore
+** / * .jks
